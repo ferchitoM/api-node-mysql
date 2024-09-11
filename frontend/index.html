@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        #contenedor {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        article {
+            width: 15rem;
+            border: 1px solid;
+            padding: 1rem;
+        }
+        img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+        }
+        p,
+        h3 {
+            width: 15rem;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0;
+        }
+    </style>
+    <body>
+        <div id="contenedor"></div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
